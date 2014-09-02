@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89f050f4-8492-46cd-9a62-16b38304cd02}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>LifeCycle</Name>
+    <RootNamespace>LifeCycle</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="CommonLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommonLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommonLayer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CommonLayerOverview.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommonLayerOverview.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommonLayerOverview.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="DataLayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataLayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataLayer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="System.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="System.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>System.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UILayer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UILayer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UILayer.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\LifeCycle.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
