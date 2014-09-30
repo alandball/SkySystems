@@ -3,8 +3,8 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
+using UI.ViewModels;
 using WebMatrix.WebData;
-using UI.Models;
 
 namespace UI.Filters
 {

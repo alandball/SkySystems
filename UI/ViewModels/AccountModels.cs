@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 
-namespace UI.Models
+namespace UI.ViewModels
 {
     public class UsersContext : DbContext
     {
@@ -18,7 +18,7 @@ namespace UI.Models
     public class UserProfile
     {
         [Key]
-        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
     }
