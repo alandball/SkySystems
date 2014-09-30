@@ -6,9 +6,18 @@ namespace UI.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "asdf";
 
-            return View();
+            return View("Index");
+        }
+
+        public ActionResult About()
+        {
+            return View("About");
+        }
+
+        public ActionResult Contact()
+        {
+            return View("Contact");
         }
     }
 }

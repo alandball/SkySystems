@@ -1,0 +1,75 @@
+﻿/* remove margin from form - for use in modal */
+.modal form
+{
+    margin: 0 !important;
+}
+
+/* http://www.revillwebdesign.com/change-the-height-width-and-position-of-a-modal-in-twitter-bootstrap/ */
+
+.wide-modal 
+{
+    padding: 10px;
+	width: 940px; /* SET THE WIDTH OF THE MODAL */
+	margin: 0 0 0 -470px; /* CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */
+}
+
+/* Left align form labels */
+.form-horizontal .control-label 
+{
+    /* width: 100px; */
+    text-align: left !important;
+}
+
+/*
+.form-horizontal .controls {
+  margin-left: 120px;
+}
+*/
+
+.form-horizontal .control-group 
+{
+    margin-bottom: 10px;
+}
+
+.form-horizontal .controls div {
+    padding-top: 5px;
+}
+
+.page-header 
+{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 0 !important;
+}
+
+.main-navbar .divider-vertical {
+    margin: 0 !important;
+}
+
+/*
+
+I want to put borders around tabs but it breaks the row/span layout workings 
+
+.tab-content {
+     border-right: 1px solid #ddd;
+     border-bottom: 1px solid #ddd;
+     border-left: 1px solid #ddd;
+     padding: 20px;
+}
+
+.nav.nav-tabs {
+    margin-bottom: 0 !important;
+}
+
+*/
+
+
+.dropdown-toggle-min-width-250 {
+    min-width: 250px;
+    text-align: left;
+}
+
+.dropdown-toggle-min-width-250 span.caret 
+{
+    float: right;
+}

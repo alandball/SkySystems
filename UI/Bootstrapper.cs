@@ -23,11 +23,11 @@ namespace UI
             // it is NOT necessary to register your controllers
             
             // e.g. container.RegisterType<ITestService, TestService>();
- 
+
             //Services
             container.RegisterType<IUserService, UserService>();
 
-            //Repositories
+            //Repos
             container.RegisterType<IUserRepository, UserRepository>();
 
             return container;

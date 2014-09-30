@@ -6,8 +6,7 @@ namespace UI
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new AuthorizeAttribute()); // Globally require authorization
-            //filters.Add(new HandleErrorAttribute()); // Removed because elmah takes charge 
+            filters.Add(new HandleErrorAttribute());
         }
     }
 }
