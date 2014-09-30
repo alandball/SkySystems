@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="8e9a6907-eb9d-482e-9b5d-8174c08cf6c4" name="WorkBreakdownStructure" linkedPackageId="739187e1-8553-4c30-a62f-a78157455017" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="591c3abe-f915-4a3c-96c5-838d3db5e487" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="632d8fec-13a9-4ffb-a5e4-b3107c943e89" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fda2e079-fac4-4648-b788-e01d1e7b4c72">
+          <propertyInstance Id="46b5ee7a-8563-4aac-83e2-091dea02f922" name="BaseName">
+            <elementDefinition Id="912377ee-fe9c-4cdf-a20c-146792b728ce" />
+          </propertyInstance>
+          <elementDefinition Id="ab5bcc7f-7145-405a-8d52-0e40e8a363dd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1dba91e1-0573-46b0-a6ba-b548dcf2a14a">
+          <propertyInstance Id="0bca5c2b-d17e-4144-bd38-3e6134d211fa" name="ClrAttributes">
+            <elementDefinition Id="81ebf398-2ed7-47e6-b96c-a8ff69ec0c93" />
+          </propertyInstance>
+          <elementDefinition Id="5466979a-112d-4c83-b178-99f248d5350c" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1659578c-ccbc-438c-97d5-4fea37fd7010">
+          <propertyInstance Id="0d999e59-7d3a-4651-b578-f2f0a587943c" name="Usings">
+            <elementDefinition Id="354689d6-3af7-4eba-bd32-34ad63139288" />
+          </propertyInstance>
+          <elementDefinition Id="1c0c8e44-dbea-4607-a765-14410d434b37" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="5d0e15a8-4ccd-400d-88b5-7e09ef879c4e" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="f8babf25-dad5-4e5c-977b-09ffbb70d8b7" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0d04b02a-d98d-43ba-adee-17110bbdfe54">
+          <propertyInstance Id="932f8c30-5cef-4115-ad02-3b4cf03589d2" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="93f30685-8e87-4a8c-8d93-d2a5bf86cc38" />
+          </propertyInstance>
+          <elementDefinition Id="9ee132eb-a825-4202-88a6-303d87e0342a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1201bfb5-542c-434b-bb74-889cdaee69d6">
+          <propertyInstance Id="18437f9a-6aed-443b-b5f8-7428187d770f" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="988a089f-f6ab-4b1b-910a-6e5f5ad205bc" />
+          </propertyInstance>
+          <elementDefinition Id="c93add53-0c7f-4772-a1ee-f93a39da5ed8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="17ef66df-8e59-40d4-b3da-9ef4ad7c8803">
+          <propertyInstance Id="64776cf8-33a0-41ac-ae05-93edf1365636" name="ProjectPath" value="ClassTemplate=..\LifeCycleLib\LifeCycleLib.csproj|EnumTemplate=..\LifeCycleLib\LifeCycleLib.csproj|InterfaceTemplate=..\LifeCycleLib\LifeCycleLib.csproj|StructTemplate=..\LifeCycleLib\LifeCycleLib.csproj">
+            <elementDefinition Id="77300a69-dfe3-40af-83e3-4bb0647978b1" />
+          </propertyInstance>
+          <elementDefinition Id="b453bf25-b03e-425a-882b-c19df4f1a58a" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e3e39c08-e146-431e-a93c-cd61f836cad4">
+          <propertyInstance Id="3513afc7-abd9-4a64-81a1-88c3942d50a0" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="4f6d7cc8-e3ba-4395-932a-42dddad2e1ab" />
+          </propertyInstance>
+          <elementDefinition Id="46df3e12-f75a-41e4-838d-7ecc2c713e4e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="423d6e36-a1a5-4383-a9bb-5a4fd389be86">
+          <propertyInstance Id="ea687a20-7c5a-4ea7-85eb-dae91fba7937" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="401bfc26-0eef-42dd-92cb-48ecfce8567c" />
+          </propertyInstance>
+          <elementDefinition Id="43567b0d-ab97-4239-ade0-fb80c664a3e3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e4e498df-308a-4bb4-9375-8a14c62599d7">
+          <propertyInstance Id="2c052fa5-3954-41c4-9f34-bdac8157d913" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="7e1cea9d-3e5b-4dba-9596-1f81b423b637" />
+          </propertyInstance>
+          <elementDefinition Id="f38bb0ff-cc85-4714-908e-fab4de1b98c8" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="54737e95-9423-426e-b325-4a649373e426">
+          <propertyInstance Id="29cc4615-7a0a-4742-9702-775b935ac385" name="Parameters">
+            <elementDefinition Id="2157b8fa-46c3-4976-a720-48e0a0d27a30" />
+          </propertyInstance>
+          <elementDefinition Id="0a13aa76-4410-4d77-9aad-2b56eddc7edf" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ac0ed0cb-9e80-48a3-87dc-7730279ea64f">
+      <profileInstance Id="90ff23cb-a928-4d5c-8e0b-4d2102174057" name="CSharpProfile">
+        <elementDefinition Id="1fd5ff0b-72e6-4e0f-b66b-248632f07281" />
+      </profileInstance>
+      <elementDefinition Id="3211f91d-2546-4261-b245-2397698481ef" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="71d1aafc-992e-4b3c-bcd2-9209c7786874">
+      <profileInstance Id="32db956e-5fad-4f33-9c72-e2bbfb5fcbf9" name="TextTemplateBindings">
+        <elementDefinition Id="5626ae95-45aa-45e7-81ba-1b7ebaec53bb" />
+      </profileInstance>
+      <elementDefinition Id="39c37c7c-f059-40bb-af80-b3192c36d394" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e8402a88-bdc2-4763-8b2f-23a14e0fac89" name="1. Orav Enterprise Resource Planning Software Project" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="95457afb-2ae2-4743-809f-55dd61122e99" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1002e9a8-8d7b-45b2-8819-6ef6fdb0a019" name="1.1 Requirements Analysis" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a9d4d55d-5378-41a3-b06c-69b1c3f006e5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c21c5e8-d4b6-4f93-9439-99628b1dc67c" name="1.1.1 Use case diagram complete" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="acdf8d68-cd73-424f-abd0-2a6ef679a40b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a84393d4-9e79-4ec6-86df-391f92cae57e" name="1.1.2 Logical system model complete" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8aaa4a02-51ad-42f3-a9c9-21b657495d2d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4e8284fd-866d-46df-bf20-e7fa68607cfe" name="1.1.3 Solution requirements document complete" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9814f2f0-cedc-4a6f-adf5-8df4b47be976" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="814b9279-b5ba-4ece-a343-830791efb049" name="1.3 Implementation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8dd6429a-c29b-4098-8bf2-847eedf34731" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68316db5-6bfc-4c3e-afb7-b1965bc8384b" name="1.3.1 Coding" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7574b8d6-756f-4e08-94a9-620dc621a48d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d71a8ca1-e4d6-4b29-bdf8-8115db78bb98" name="1.3.2 Internal testing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e04d14a8-9dcd-4312-86e4-7139bd7a365b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5bf0952b-aac3-4858-9e0d-5398170723a3" name="1.3.1.1 Database" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97d37f18-1435-4706-a1b8-e056ffee04eb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2177b2a3-81fb-48a1-abf7-3d1d544d6d3e" name="1.3.1.2 GUI" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29d4946d-cbea-4c6f-9aff-694caa873cc4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="05351478-af2e-4538-a70d-5889fa0eb1b0" name="1.3.1.3 Backend" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d3b8fddf-dac8-4a22-9e29-d8db218a83bf" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f3786f54-01bb-4b98-a2b7-4641bdc99ec2" name="1.3.1.4 Frontend" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="485c7891-0512-4697-98d4-eae90e7e6658" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="67579913-9053-439d-b93f-13063ad15964" name="1.3.1.5 Mobile app" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1aaa205-3c5a-40ca-b659-2559c175fa0d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17e15e0d-27e6-4b24-99e2-b070b8b6d40a" name="1.3.2.1 Test data added" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="436dcfa4-a417-434e-979d-245e17464cde" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="63283916-655c-42c7-9603-cd5f90432f1d" name="1.3.2.2 Full system test" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93d77228-1f4b-41d7-9943-fbfe02b15893" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e64ac4cc-d195-43f7-8d65-6ab68c1085d2" name="1.3.2.3 Signed off as complete and test data removed" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03b46b70-2dea-4cf4-9e8b-7e1c09d04e89" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3634085e-d5a2-42bc-8d46-9f5e94eeccd9" name="1.4 Solution Rollout" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="538eb0f5-ebce-48df-9a06-daced69d08f8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6e6536b0-2433-453e-9009-4a3679522238" name="1.4.1 Complete rollout" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce73377e-05eb-4f2e-a64c-cc834fb2eecf" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a7dc2f8b-7f13-4f47-97d4-38b98af2466a" name="1.4.2 Bug reports and fixes " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3fd242de-2427-4f84-a813-7e56ac84170d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf25529d-517c-47e1-9eb2-920d150252ad" name="1.4.3 Maintenance contract" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b4d1d5f4-75a9-4633-8142-336d00f858d5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1d6c5a80-89fb-489b-9a8d-2fd39972941c" name="1.2 System Design" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c70b7408-074e-4a71-a134-eec804f7987a" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e867c972-fec9-4b2e-b08a-8605f4fd5c3e" name="1.2.1 Hardware requirements outlined" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="50fa75ed-aa44-4a37-a321-5b75e6f454ab" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dcac57fb-e08a-4356-aa07-6f53fb2a9d69" name="1.2.2 Database design complete" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4bdeca64-7f97-4f82-aa1c-abbe48d3ecfd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71684234-b987-460d-9c3c-61f525f479ef" name="1.2.3 GUI complete" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f076f11-f3bd-42e5-9b18-7623d3db307f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7ed30288-26ac-45f5-a9f6-01d1391d328a" name="1.4.1.1 Training" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a7efc23-f5d3-4468-b3fc-cb0820bc4209" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b4b6e6e-adae-4479-af2f-741d846b13a7" name="1.4.1.2 Initial training course" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f07a24ca-fb53-490f-8cf8-b5790ee852f6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a2211d4-ea5b-46a2-82bf-ea5897c6f8f9" name="1.4.2.1 Weekly reports and fixes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c45a136-295d-40d2-9619-1ba3987230ba" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c6758d6-4104-486d-90d5-78f64030e9b0" name="1.4.2.2 Monthly reports and fixes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="766cd80c-5e36-4633-b1a3-a5f5a7269bd3" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4a49b6ca-3718-4279-b637-ebb6599a9a0e" name="1.4.1.2.1 Desktop application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bd403776-dc7e-4327-adfe-dbf446c4c1f9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="53998401-c9d2-44e0-8975-5597e5c9a5b2" name="1.4.1.2.2 Mobile" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3258c77c-2c8f-418e-8bd6-0af7495af2be" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="739187e1-8553-4c30-a62f-a78157455017" name="LifeCycle">
+    <elementDefinition Id="0ecce8b3-05b7-49ff-b46b-98a20c115d81" />
+  </package>
+</logicalClassDesignerModel>

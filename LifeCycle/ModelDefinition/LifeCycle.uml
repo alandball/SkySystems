@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="0ecce8b3-05b7-49ff-b46b-98a20c115d81"
   name="LifeCycle" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -86,18 +86,6 @@
     </stereotypeInstance>
   </appliedStereotypesInternal>
   <profileInstances>
-    <packageHasProfileInstances
-      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
-      <profileInstance
-        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
-        name="StandardProfileL2" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances
-      Id="29349502-908c-4fda-9054-c48619c59ed0">
-      <profileInstance
-        Id="532ea607-fb19-44b8-8502-3351b05452be"
-        name="StandardProfileL3" />
-    </packageHasProfileInstances>
     <packageHasProfileInstances
       Id="3211f91d-2546-4261-b245-2397698481ef">
       <profileInstance
@@ -2656,6 +2644,246 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="95457afb-2ae2-4743-809f-55dd61122e99"
+        name="1. Orav Enterprise Resource Planning Software Project"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a9d4d55d-5378-41a3-b06c-69b1c3f006e5"
+        name="1.1 Requirements Analysis"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="acdf8d68-cd73-424f-abd0-2a6ef679a40b"
+        name="1.1.1 Use case diagram complete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8aaa4a02-51ad-42f3-a9c9-21b657495d2d"
+        name="1.1.2 Logical system model complete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9814f2f0-cedc-4a6f-adf5-8df4b47be976"
+        name="1.1.3 Solution requirements document complete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8dd6429a-c29b-4098-8bf2-847eedf34731"
+        name="1.3 Implementation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7574b8d6-756f-4e08-94a9-620dc621a48d"
+        name="1.3.1 Coding"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e04d14a8-9dcd-4312-86e4-7139bd7a365b"
+        name="1.3.2 Internal testing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97d37f18-1435-4706-a1b8-e056ffee04eb"
+        name="1.3.1.1 Database"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="29d4946d-cbea-4c6f-9aff-694caa873cc4"
+        name="1.3.1.2 GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d3b8fddf-dac8-4a22-9e29-d8db218a83bf"
+        name="1.3.1.3 Backend"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="485c7891-0512-4697-98d4-eae90e7e6658"
+        name="1.3.1.4 Frontend"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1aaa205-3c5a-40ca-b659-2559c175fa0d"
+        name="1.3.1.5 Mobile app"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="436dcfa4-a417-434e-979d-245e17464cde"
+        name="1.3.2.1 Test data added"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="93d77228-1f4b-41d7-9943-fbfe02b15893"
+        name="1.3.2.2 Full system test"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03b46b70-2dea-4cf4-9e8b-7e1c09d04e89"
+        name="1.3.2.3 Signed off as complete and test data removed"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="538eb0f5-ebce-48df-9a06-daced69d08f8"
+        name="1.4 Solution Rollout"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ce73377e-05eb-4f2e-a64c-cc834fb2eecf"
+        name="1.4.1 Complete rollout"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3fd242de-2427-4f84-a813-7e56ac84170d"
+        name="1.4.2 Bug reports and fixes "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b4d1d5f4-75a9-4633-8142-336d00f858d5"
+        name="1.4.3 Maintenance contract"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c70b7408-074e-4a71-a134-eec804f7987a"
+        name="1.2 System Design"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="50fa75ed-aa44-4a37-a321-5b75e6f454ab"
+        name="1.2.1 Hardware requirements outlined"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bdeca64-7f97-4f82-aa1c-abbe48d3ecfd"
+        name="1.2.2 Database design complete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5f076f11-f3bd-42e5-9b18-7623d3db307f"
+        name="1.2.3 GUI complete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6a7efc23-f5d3-4468-b3fc-cb0820bc4209"
+        name="1.4.1.1 Training"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f07a24ca-fb53-490f-8cf8-b5790ee852f6"
+        name="1.4.1.2 Initial training course"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4c45a136-295d-40d2-9619-1ba3987230ba"
+        name="1.4.2.1 Weekly reports and fixes"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="766cd80c-5e36-4633-b1a3-a5f5a7269bd3"
+        name="1.4.2.2 Monthly reports and fixes"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd403776-dc7e-4327-adfe-dbf446c4c1f9"
+        name="1.4.1.2.1 Desktop application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3258c77c-2c8f-418e-8bd6-0af7495af2be"
+        name="1.4.1.2.2 Mobile"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
