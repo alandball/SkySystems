@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
+using UI.ViewModels;
 using WebMatrix.WebData;
 using UI.Filters;
-using UI.Models;
 
 namespace UI.Controllers
 {
