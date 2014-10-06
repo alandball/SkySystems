@@ -4,20 +4,20 @@ namespace UI.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
         {
-
-            return View("Index");
+            return View();
         }
 
         public ActionResult About()
         {
-            return View("About");
+            return View();
         }
 
         public ActionResult Contact()
         {
-            return View("Contact");
+            return View();
         }
     }
 }

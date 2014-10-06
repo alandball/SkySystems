@@ -2,47 +2,54 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - Student Manager</title>
+        <title>@ViewBag.Title - Sky Systems</title>
 
         <meta name="viewport" content="width=device-width" />
 
-        @Styles.Render("~/Content/bootstrapcss")
-
+        @Styles.Render("~/Content/bootstrapcss.css")
+        @Scripts.Render("~/bundles/modernizr")
+        
+        <link href="~/Content/bootstrap.css" rel="stylesheet">
 
         @RenderSection("Styles", false)
     </head>
-    <body class="">
-        <header>
-            <div class="hero-unit">
-                <div class="float-left">
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
 
-                        </ul>
-                    </nav>
+    <body>
+        @RenderSection("featured", required: false)
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Sky Systems</a>
                 </div>
+
+                <div class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-right" role="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </form>
+                </div><!--/.navbar-collapse -->
             </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
         </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-                </div>
-            </div>
-        </footer>
+
+            
+        @RenderBody()
 
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrapjs")
+        
         @RenderSection("scripts", required: false)
+
     </body>
 </html>
