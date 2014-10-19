@@ -4,6 +4,7 @@ using System.Linq;
 using System.Transactions;
 using System.Web.Mvc;
 using System.Web.Security;
+using Common.Users;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using UI.ViewModels;
@@ -16,8 +17,14 @@ namespace UI.Controllers
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
+        private readonly IUserService _userService;
         //
         // GET: /Account/Login
+
+        public AccountController(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
@@ -34,9 +41,38 @@ namespace UI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            if (ModelState.IsValid)
             {
-                return RedirectToLocal(returnUrl);
+                if (WebSecurity.GetUserId(model.UserName) == -1)
+                {
+                    // If we got this far, something failed, redisplay form
+                    ModelState.AddModelError("", "Sorry, your account does not exist. Please register to join.");
+                    return View(model);
+                }
+
+                //get the user, check that they have confirmed
+                var isConfirmed = WebSecurity.IsConfirmed(model.UserName);
+
+                if (!isConfirmed)
+                {
+                    // If we got this far, something failed, redisplay form
+                    ModelState.AddModelError("", "Your account has not been confirmed. Please click on the activation link that was emailed to you when you first created the account.");
+                    return View(model);
+                }
+
+                var user = _userService.Get(WebSecurity.GetUserId(model.UserName));
+
+                if (WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+                {
+                    return RedirectToLocal(returnUrl);
+                }
+
+                var loginSuccessful = WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe);
+
+                if (loginSuccessful)
+                {
+                    return RedirectToLocal(returnUrl);
+                }
             }
 
             // If we got this far, something failed, redisplay form

@@ -29,6 +29,8 @@ namespace UI
                         "~/Content/override.css",
                         "~/Content/datepicker.css",
                         "~/Content/widget-box.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Site.css").Include("~/Content/Site.css"));
         }
     }
 }
