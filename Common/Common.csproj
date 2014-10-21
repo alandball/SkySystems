@@ -83,11 +83,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addresses\AddressService.cs" />
+    <Compile Include="Addresses\IAddressRepository.cs" />
+    <Compile Include="Addresses\IAddressService.cs" />
+    <Compile Include="AddressTypes\AddressTypeService.cs" />
+    <Compile Include="AddressTypes\IAddressTypeRepository.cs" />
+    <Compile Include="AddressTypes\IAddressTypeService.cs" />
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Clients\ClientService.cs" />
+    <Compile Include="Clients\IClientRepository.cs" />
+    <Compile Include="Clients\IClientService.cs" />
+    <Compile Include="ClientTypes\ClientTypeService.cs" />
+    <Compile Include="ClientTypes\IClientTypeRepository.cs" />
+    <Compile Include="ClientTypes\IClientTypeService.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\AddressType.cs" />
     <Compile Include="Models\Branch.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ClientType.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Models\Test.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
+    <Compile Include="Orders\IOrderRepository.cs" />
+    <Compile Include="Orders\IOrderService.cs" />
+    <Compile Include="Orders\OrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock\IStockRepository.cs" />
+    <Compile Include="Stock\IStockService.cs" />
+    <Compile Include="Stock\StockService.cs" />
     <Compile Include="Users\IUserRepository.cs" />
     <Compile Include="Users\IUserService.cs" />
     <Compile Include="Users\UserService.cs" />
