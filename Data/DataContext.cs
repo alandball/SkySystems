@@ -7,8 +7,19 @@ namespace Data
     public class DataContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        //public DbSet<Branch> Branches { get; set; }
-        //public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<Authentication> Authentications { get; set; }
+
+        public DbSet<Branch> Branches { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<ClientType> ClientTypes { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Stock> Stock { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<AddressType> AddressTypes { get; set; }
+
+        
 
         public DataContext()
             : base("DefaultConnection")

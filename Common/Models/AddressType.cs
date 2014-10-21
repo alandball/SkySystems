@@ -1,5 +1,3 @@
-using System;
-
 namespace Common.Models
 {
     public class AddressType

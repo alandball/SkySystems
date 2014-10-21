@@ -1,4 +1,11 @@
 using System.Web.Mvc;
+using Common.Addresses;
+using Common.AddressTypes;
+using Common.Authentications;
+using Common.Clients;
+using Common.ClientTypes;
+using Common.Orders;
+using Common.Stocks;
 using Common.Users;
 using Data.Repositories;
 using Microsoft.Practices.Unity;
@@ -26,9 +33,23 @@ namespace UI
 
             //Services
             container.RegisterType<IUserService, UserService>();
+            container.RegisterType<IAddressService, AddressService>();
+            container.RegisterType<IAddressTypeService, AddressTypeService>();
+            container.RegisterType<IAuthenticationService, AuthenticationService>();
+            container.RegisterType<IClientService, ClientService>();
+            container.RegisterType<IClientTypeService, ClientTypeService>();
+            container.RegisterType<IOrderService, OrderService>();
+            container.RegisterType<IStockService, StockService>();
 
             //Repos
             container.RegisterType<IUserRepository, UserRepository>();
+            container.RegisterType<IAddressRepository, AddressRepository>();
+            container.RegisterType<IAddressTypeRepository, AddressTypeRepository>();
+            container.RegisterType<IAuthenticationRepository, AuthenticationRepository>();
+            container.RegisterType<IClientRepository, ClientRepository>();
+            container.RegisterType<IClientTypeRepository, ClientTypeRepository>();
+            container.RegisterType<IOrderRepository, OrderRepository>();
+            container.RegisterType<IStockRepository, StockRepository>();
 
             return container;
         }

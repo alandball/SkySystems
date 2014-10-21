@@ -1,9 +1,7 @@
-using Common.Models;
-
-namespace Common.Address
+namespace Common.Addresses
 {
     public interface IAddressRepository
     {
-        Address Get(int id);
+
     }
 }

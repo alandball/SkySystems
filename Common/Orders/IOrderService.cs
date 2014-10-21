@@ -1,9 +1,9 @@
 using Common.Models;
 
-namespace Common.Order
+namespace Common.Orders
 {
     public interface IOrderService
     {
-        public Order Get { get; set; }
+        
     }
 }

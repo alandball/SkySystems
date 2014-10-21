@@ -53,8 +53,19 @@
     <Compile Include="Migrations\201409301957387_First.Designer.cs">
       <DependentUpon>201409301957387_First.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410212027357_MainDatabaseTablesCreateMigrations.cs" />
+    <Compile Include="Migrations\201410212027357_MainDatabaseTablesCreateMigrations.Designer.cs">
+      <DependentUpon>201410212027357_MainDatabaseTablesCreateMigrations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AddressRepository.cs" />
+    <Compile Include="Repositories\AddressTypeRepository.cs" />
+    <Compile Include="Repositories\AuthenticationRepository.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\ClientTypeRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\StockRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +81,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201409301957387_First.resx">
       <DependentUpon>201409301957387_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410212027357_MainDatabaseTablesCreateMigrations.resx">
+      <DependentUpon>201410212027357_MainDatabaseTablesCreateMigrations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

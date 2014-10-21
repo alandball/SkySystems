@@ -1,9 +1,7 @@
-using Common.Models;
-
-namespace Common.AddressType
+namespace Common.AddressTypes
 {
     public interface IAddressTypeService
     {
-        public AddressType Get { get; set; }
+
     }
 }

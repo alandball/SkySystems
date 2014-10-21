@@ -1,9 +1,7 @@
-using Common.Models;
-
-namespace Common.ClientType
+namespace Common.ClientTypes
 {
     public interface IClientTypeService
     {
-        public ClientType Get { get; set; }
+
     }
 }

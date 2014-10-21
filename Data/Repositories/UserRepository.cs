@@ -4,7 +4,7 @@ using Common.Users;
 
 namespace Data.Repositories
 {
-    public class UserRepository :IUserRepository
+    public class UserRepository : IUserRepository
     {
         public User Get(int id)
         {
@@ -12,6 +12,7 @@ namespace Data.Repositories
             {
                 return db.Users
                          .Include("Branch")
+                         .Include("UserType")
                          .Single(x => x.Id == id);
             }
         }

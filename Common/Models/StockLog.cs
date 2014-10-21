@@ -1,17 +1,15 @@
-using System;
+﻿using System;
 
 namespace Common.Models
 {
-    public class Client
+    public class StockLog
     {
         public int Id { get; set; }
-		public int ClientTypeId { get; set; }
+        public int StockId { get; set; }
 
-        public string CompanyName { get; set; }
-		public string Email { get; set; }
-		public string Tel1 { get; set; }
-		public string Tel2 { get; set; }    
-	 
+        public double Quantity { get; set; }
+        public double InOut { get; set; }
+
         public DateTime? DateCreated { get; set; }
         public DateTime? DateLastModified { get; set; }
         public DateTime? DateDeleted { get; set; }
@@ -20,6 +18,6 @@ namespace Common.Models
         public int? UserIdDeletedBy { get; set; }
         public bool IsDeleted { get; set; }
 
-       	public virtual ClientType ClientType { get; set; }
+        public virtual Stock Stock { get; set; }
     }
 }
