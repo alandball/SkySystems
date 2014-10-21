@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201410212027357_MainDatabaseTablesCreateMigrations.Designer.cs">
       <DependentUpon>201410212027357_MainDatabaseTablesCreateMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410212040518_RemoveNullableOnDateCreatedAndUserIdCreatedBy.cs" />
+    <Compile Include="Migrations\201410212040518_RemoveNullableOnDateCreatedAndUserIdCreatedBy.Designer.cs">
+      <DependentUpon>201410212040518_RemoveNullableOnDateCreatedAndUserIdCreatedBy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AddressRepository.cs" />
@@ -84,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201410212027357_MainDatabaseTablesCreateMigrations.resx">
       <DependentUpon>201410212027357_MainDatabaseTablesCreateMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410212040518_RemoveNullableOnDateCreatedAndUserIdCreatedBy.resx">
+      <DependentUpon>201410212040518_RemoveNullableOnDateCreatedAndUserIdCreatedBy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

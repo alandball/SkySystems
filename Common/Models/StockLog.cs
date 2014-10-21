@@ -10,10 +10,10 @@ namespace Common.Models
         public double Quantity { get; set; }
         public double InOut { get; set; }
 
-        public DateTime? DateCreated { get; set; }
+        public DateTime DateCreated { get; set; }
         public DateTime? DateLastModified { get; set; }
         public DateTime? DateDeleted { get; set; }
-        public int? UserIdCreatedBy { get; set; }
+        public int UserIdCreatedBy { get; set; }
         public int? UserIdLastModifiedBy { get; set; }
         public int? UserIdDeletedBy { get; set; }
         public bool IsDeleted { get; set; }
