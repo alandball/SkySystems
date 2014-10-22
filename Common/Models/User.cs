@@ -8,6 +8,8 @@ namespace Common.Models
         public int BranchId { get; set; }
         public int UserTypeId { get; set; }
 
+        public string UserName { get; set; }
+
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
