@@ -20,16 +20,17 @@ namespace Common.Authentications
             var userId = 2;
             var now = DateTime.Now;
 
-            if (authentication.Id == 0)
+            if (GetByUsername(authentication.UserName) != null)
             {
-                authentication.DateCreated = now;
-                authentication.UserIdCreatedBy = userId;
+                if (authentication.Id == 0)
+                {
+                    authentication.DateCreated = now;
+                    authentication.UserIdCreatedBy = userId;
 
-                return _authenticationRepository.Create(authentication);
-            }
-            else
-            {
-                var dbRecord = Get(authentication.UserName, authentication.Password);
+                    return _authenticationRepository.Create(authentication);
+                }
+
+                var dbRecord = GetByUsername(authentication.UserName);
 
                 dbRecord.UserName = authentication.UserName;
                 dbRecord.Password = authentication.Password;
@@ -41,11 +42,13 @@ namespace Common.Authentications
 
                 return authentication.Id;
             }
+
+            return 0;
         }
 
-        public Authentication Get(string username, string password)
+        public Authentication GetByUsername(string username)
         {
-            return _authenticationRepository.Get(username, password);
+            return _authenticationRepository.GetByUsername(username);
         }
     }
 }

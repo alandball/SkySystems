@@ -6,6 +6,6 @@ namespace Common.Authentications
     {
         int Create(Authentication authentication);
         void Update(Authentication dbRecord);
-        Authentication Get(string username, string password);
+        Authentication GetByUsername(string username);
     }
 }

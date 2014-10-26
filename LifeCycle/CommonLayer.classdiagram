@@ -74,17 +74,17 @@
   </appliedStereotypesInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1eda9b00-1c26-44d2-a186-74b80610f788" name="tblUser" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="1eda9b00-1c26-44d2-a186-74b80610f788" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4acfb62a-c73c-4290-90ee-90c74a51b2a9" />
         <suppliersInternal>
           <dependency Id="1075a2a7-81e1-4521-af36-d56b87cc33cc">
-            <classMoniker Id="42d3ff45-f160-4851-8457-0974f34003c9" LastKnownName="tblAuthentication" />
+            <classMoniker Id="42d3ff45-f160-4851-8457-0974f34003c9" LastKnownName="Authentication" />
             <elementDefinition Id="64246b80-fc81-41c6-bfc6-18ee4b969deb" />
           </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="b7f85d34-1458-4026-94d9-92d0ed0f642f" isDerived="false" sourceEndRoleName="tblUser" targetEndRoleName="tblUseType" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2833da9d-7885-43dd-a260-32f8ff97b631" LastKnownName="tblUserType" />
+            <classMoniker Id="2833da9d-7885-43dd-a260-32f8ff97b631" LastKnownName="UserType" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="4fe77601-157b-4285-b55c-330a4edff5a3" name="tblUser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -100,7 +100,7 @@
             <elementDefinition Id="0f1f06f0-c014-4afa-8a30-dafa40b19f94" />
           </association>
           <association Id="50013c3b-6f94-4c9c-b0ef-f372ca149185" isDerived="false" sourceEndRoleName="tblUser" targetEndRoleName="tblAuthentication" isLeaf="false" isAbstract="false">
-            <classMoniker Id="42d3ff45-f160-4851-8457-0974f34003c9" LastKnownName="tblAuthentication" />
+            <classMoniker Id="42d3ff45-f160-4851-8457-0974f34003c9" LastKnownName="Authentication" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="73133796-acae-4c54-8812-b60e77c777e7" name="tblUser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -116,7 +116,7 @@
             <elementDefinition Id="97e051c7-de09-44d8-a40e-0594e04e9d23" />
           </association>
           <association Id="28ed4818-4be9-4438-9ad8-18a0c31b2b11" isDerived="false" sourceEndRoleName="tblUser" targetEndRoleName="tblBranch" isLeaf="false" isAbstract="false">
-            <classMoniker Id="8a853977-3ac1-4252-8c52-4bc3a8d8f268" LastKnownName="tblBranch" />
+            <classMoniker Id="8a853977-3ac1-4252-8c52-4bc3a8d8f268" LastKnownName="Branch" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b8cb74ae-27e9-4830-abc3-f583cf7ffd94" name="tblUser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -132,7 +132,7 @@
             <elementDefinition Id="1b9db64e-c65a-4572-84f3-85504e15d92f" />
           </association>
           <association Id="7e220cc2-874f-4061-a85b-45905480592c" isDerived="false" sourceEndRoleName="tblUser" targetEndRoleName="tblStockLog" isLeaf="false" isAbstract="false">
-            <classMoniker Id="5110be02-e22f-4436-ba40-efa6402f95f1" LastKnownName="tblStockLog" />
+            <classMoniker Id="5110be02-e22f-4436-ba40-efa6402f95f1" LastKnownName="StockLog" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="4e4cfd64-ecc7-4116-970c-90e1c155c60c" name="tblUser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -174,11 +174,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2833da9d-7885-43dd-a260-32f8ff97b631" name="tblUserType" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2833da9d-7885-43dd-a260-32f8ff97b631" name="UserType" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7517729e-d3b1-4dcd-a2c0-eacfbf5cbb70" />
         <suppliersInternal>
           <dependency Id="9e355f9c-829a-4c97-be75-eff24d7bf4fc">
-            <classMoniker Id="1eda9b00-1c26-44d2-a186-74b80610f788" LastKnownName="tblUser" />
+            <classMoniker Id="1eda9b00-1c26-44d2-a186-74b80610f788" LastKnownName="User" />
             <elementDefinition Id="cfdb1b22-09d6-495b-a91f-38b091b3010d" />
           </dependency>
         </suppliersInternal>
@@ -199,17 +199,17 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c26b75a7-625a-4541-9a83-5ad70c594f97" name="tblClientType" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c26b75a7-625a-4541-9a83-5ad70c594f97" name="ClientType" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a54f3c21-74a7-4ad3-bbe0-01a5b2d27e0e" />
         <suppliersInternal>
           <dependency Id="322ebdd8-f1e7-441e-b2e8-47be11d98dee">
-            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="tblClient" />
+            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="Client" />
             <elementDefinition Id="2c929f87-bdaf-4980-b488-515732b7d98c" />
           </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="c4929550-55e0-412e-bb71-1a053726384a" isDerived="false" sourceEndRoleName="tblClientType" targetEndRoleName="tblClient" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="tblClient" />
+            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="Client" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="a860f9cc-85ba-4067-876a-c8320bd27148" name="tblClientType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -235,18 +235,15 @@
           <property Id="209f9a58-1246-47d2-bee0-7532f6d56388" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f24f838a-6dfb-41dd-971c-9d9cbf2a1f61" />
           </property>
-          <property Id="f310f02f-acd1-4525-b87a-86574440283a" name="ClientId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ccc9d51d-7fc1-4e34-9e58-a70c54ef527a" />
-          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" name="tblClient" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e51ccc40-68d3-4915-8690-55ee6ebcf2da" />
         <targetEnds>
           <association Id="a0f32b94-30ef-4dc9-9778-db786be5f88a" isDerived="false" sourceEndRoleName="tblClient" targetEndRoleName="tblOrders" isLeaf="false" isAbstract="false">
-            <classMoniker Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" LastKnownName="tblOrders" />
+            <classMoniker Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" LastKnownName="Order" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ec2f63da-0c5f-4eeb-8761-ad0e1a8ccba5" name="tblClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -269,9 +266,6 @@
           <property Id="a08eaf8b-07db-4096-bbaa-5f8427ae4f8c" name="CompanyName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="fcfdbdc5-0a25-4682-a675-121fd92597c7" />
           </property>
-          <property Id="36326c74-6002-4b38-aee0-d3f6ee838c12" name="BillingAddress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="300059ff-c3c7-4698-9b36-9726dce7bd64" />
-          </property>
           <property Id="93188060-c7ce-418a-b6ba-702506b58201" name="Tell1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="51624411-7288-4751-9be0-4134c5bacd70" />
           </property>
@@ -281,19 +275,22 @@
           <property Id="f3ab1a10-ec71-46e7-9d3c-604341613173" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="41ff35a0-e670-4cc8-ac8f-3069ee497439" />
           </property>
+          <property Id="3a031250-7f89-49ec-94b5-08514dcd761e" name="ClientTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b9eafc11-2c18-4570-80de-5402d7ed3a84" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" name="tblOrders" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fe9ff14c-64a3-4d71-b9e5-5b23ceb302d8" />
         <suppliersInternal>
           <dependency Id="98e16b9d-584c-4870-aa5e-52c4ea0eb7ac">
-            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="tblClient" />
+            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="Client" />
             <elementDefinition Id="13508dbb-b8ed-4bed-8d4c-455f320c5aa3" />
           </dependency>
           <dependency Id="eef9cc62-2bfb-495b-9c6b-2180b677e6fc">
-            <classMoniker Id="c232ab63-06a2-418d-97c3-c449394d5b11" LastKnownName="tblStock" />
+            <classMoniker Id="c232ab63-06a2-418d-97c3-c449394d5b11" LastKnownName="Stock" />
             <elementDefinition Id="f7a0eb02-6d6e-41fd-bcf1-1862c9a33420" />
           </dependency>
         </suppliersInternal>
@@ -313,7 +310,7 @@
           <property Id="1f684fb6-4e34-48a5-a3da-b939d3a2933a" name="OrderDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f7b8202d-a1ac-4b80-8276-6d4bdf9a5171" />
           </property>
-          <property Id="b347cfec-105a-4238-8584-f274c68327c4" name="DeliveryAddress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="b347cfec-105a-4238-8584-f274c68327c4" name="AddressId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4f8e339d-dac4-4ce3-9d7c-b3ab406a4ce7" />
           </property>
           <property Id="da2117d4-1cbc-4b9f-9499-dc239a4041a5" name="GoogleMapLink" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -326,11 +323,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c232ab63-06a2-418d-97c3-c449394d5b11" name="tblStock" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c232ab63-06a2-418d-97c3-c449394d5b11" name="Stock" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6d5c123d-9ade-4775-a1a8-19b15c54d1d8" />
         <targetEnds>
           <association Id="a5fd9040-bcd8-494c-aa4b-c974c9b53e6e" isDerived="false" sourceEndRoleName="tblStock" targetEndRoleName="tblOrders" isLeaf="false" isAbstract="false">
-            <classMoniker Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" LastKnownName="tblOrders" />
+            <classMoniker Id="a4e56e78-1749-4787-b6b2-59b71ffe7628" LastKnownName="Order" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="bd3dcb88-799b-4e49-88c8-98aef3e18370" name="tblStock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -346,7 +343,7 @@
             <elementDefinition Id="5b8bfab3-e385-44ca-b0de-c75708536373" />
           </association>
           <association Id="842de9ef-1f50-4c8d-bf4b-988742dbea5d" isDerived="false" sourceEndRoleName="tblStock" targetEndRoleName="tblStockLog" isLeaf="false" isAbstract="false">
-            <classMoniker Id="5110be02-e22f-4436-ba40-efa6402f95f1" LastKnownName="tblStockLog" />
+            <classMoniker Id="5110be02-e22f-4436-ba40-efa6402f95f1" LastKnownName="StockLog" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="99f43796-88bd-4f75-bf39-b2f43074284a" name="tblStock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -377,13 +374,13 @@
         <elementDefinition Id="e93e811d-e1fd-45d1-9df4-81b57245ba8d" />
         <suppliersInternal>
           <dependency Id="3fe43286-9b15-48da-ac43-c37a5d13f00e">
-            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="tblClient" />
+            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="Client" />
             <elementDefinition Id="a71a847a-ac3b-46cc-9604-e0981e49e16d" />
           </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="fb0fad7f-1c92-45bc-9d47-d0b2ec74a3dc" isDerived="false" sourceEndRoleName="tblAddress" targetEndRoleName="tblClient" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="tblClient" />
+            <classMoniker Id="7877485a-7b9a-4c95-8a75-9acc2db1307f" LastKnownName="Client" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="f2becb0a-695c-4260-b869-fe3b44a45c31" name="tblAddress" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -408,6 +405,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="6a9566c9-67bf-43d8-924d-2a28e5372b90" />
           </association>
+          <association Id="543fd97f-1e92-4065-867a-b183974b1c04" isDerived="false" sourceEndRoleName="Address" targetEndRoleName="AddressType" isLeaf="false" isAbstract="false">
+            <classMoniker Id="21f31062-c130-4012-bea8-f428c9f32b38" LastKnownName="AddressType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="228606e2-8e2e-4293-b69c-193abfdbf7cc" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fdc2a93c-716e-4a59-8b0b-12738de2b1de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74906816-cba1-4053-b00a-7eaafa455026" name="AddressType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="35ae6b2e-ddee-473e-ae83-e4b308967170" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8265cb7-b1a5-4db2-94e9-59cfb54c4e4f" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="020a4da4-f336-4ad9-a3d5-47c773b303b5" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -416,14 +429,32 @@
           <property Id="f83f9761-b0d5-4105-bd0a-741803dfc91f" name="ClientId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7bb2e398-9728-415f-9a78-04b63ce94f22" />
           </property>
-          <property Id="186f86f6-67db-41b4-a512-48d98e92d9f0" name="DeliveryAddress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="186f86f6-67db-41b4-a512-48d98e92d9f0" name="AddressLine1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d49fbe79-33fe-4f17-9485-ad762606090e" />
+          </property>
+          <property Id="2a96483c-8564-41d1-9f7b-5f3e46b2a230" name="AddressLine2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="870a74ea-1584-47a9-b88b-fcc4b77c7dd6" />
+          </property>
+          <property Id="cd04b924-4374-4478-a2fa-466838a1e48e" name="PostalCode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d82da65f-c352-49df-a47d-447d22fe0958" />
+          </property>
+          <property Id="8f3dc77a-4894-49d7-9934-800210dfd80a" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c319c95f-017c-4c35-b118-4c1457baf93d" />
+          </property>
+          <property Id="6fc866e7-0546-4028-947f-24fb43b454af" name="Country" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="01b918f7-6ff7-46e1-a46c-2504ee4bc6f7" />
+          </property>
+          <property Id="71c1aa3f-f469-42ff-8b95-91766a658f46" name="AddressLine3" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3350db8f-0892-4c0b-aab8-f146a17209bb" />
+          </property>
+          <property Id="a9da7fe5-e21e-48fc-bed9-6c5089a33fae" name="AddressTypeId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1172d243-6200-4550-a682-b97dae409746" />
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="42d3ff45-f160-4851-8457-0974f34003c9" name="tblAuthentication" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="42d3ff45-f160-4851-8457-0974f34003c9" name="Authentication" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0ae08374-ab40-4335-8ca8-2f1e58cbe9d7" />
         <ownedAttributesInternal>
           <property Id="cfc3e1c0-6f54-4374-8cd0-9b3b14415d86" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -442,7 +473,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8a853977-3ac1-4252-8c52-4bc3a8d8f268" name="tblBranch" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8a853977-3ac1-4252-8c52-4bc3a8d8f268" name="Branch" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7693cd94-9901-445c-b3a8-e075b8d2747d" />
         <ownedAttributesInternal>
           <property Id="d53436f0-467b-45b6-96c2-f435744101c5" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -461,7 +492,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="5110be02-e22f-4436-ba40-efa6402f95f1" name="tblStockLog" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="5110be02-e22f-4436-ba40-efa6402f95f1" name="StockLog" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3c3a8139-673a-4f6f-a4c4-fa4d5cafcf01" />
         <ownedAttributesInternal>
           <property Id="b208ded1-e934-4e93-8fc0-076cee8effa2" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -483,17 +514,17 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="833c9923-4ad2-46d7-b524-bc82480cfa83" name="AddressType" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="ab0a25e6-7386-4d0c-a1e8-3a070cb3301f" />
+      <class Id="21f31062-c130-4012-bea8-f428c9f32b38" name="AddressType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1a951786-e4e3-4db6-8b08-2d3cd5c27063" />
         <ownedAttributesInternal>
-          <property Id="71e507fd-dfb6-44db-bdd8-13c4a5679d61" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cd0bd3ef-79e3-48e1-a662-abbc91878925" />
+          <property Id="74fb2724-2b0f-4611-bb87-dd833a3931d4" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bef7508e-2691-4f65-8126-d374e7183608" />
           </property>
-          <property Id="4d3d1966-5001-49ee-ad15-a7d8ecfa8b0b" name="ClientId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="06707b63-09c6-41e2-ae74-39378e99f448" />
+          <property Id="5f82fa7f-d47b-44e6-a9ec-81ff708aa977" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c39d1fa-775f-4bec-a8fb-91d5ea295942" />
           </property>
-          <property Id="4af05144-07a7-4fdb-87e0-d15b18b294dc" name="DeliveryAddress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="da238515-e0ac-475b-b38f-f4dde2843e1f" />
+          <property Id="da0cf187-326e-4798-b33e-22ca271cecdd" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a86b5267-7bd7-483c-80e1-d7d7f109ff8a" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -502,6 +533,18 @@
   <package Id="dd728b4c-2acf-426a-9fa7-1015716c3334" name="LifeCycle">
     <elementDefinition Id="0ecce8b3-05b7-49ff-b46b-98a20c115d81" />
     <profileInstances>
+      <packageHasProfileInstances Id="61f41b10-488f-4d03-ad96-a106d1acbe48">
+        <profileInstance Id="a715abb1-4ddd-4ccb-8d45-d3ddd878db89" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0bace5d9-0a8f-4137-9f48-85a676f39a91">
+        <profileInstance Id="6846c37f-1cbd-4257-8c4c-f1626d936377" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
       <packageHasProfileInstances Id="6ca27017-c03e-4d49-9f81-cc65c45666ec">
         <profileInstance Id="fa59b4eb-9414-4c76-af14-03b32002bce7" name="CSharpProfile">
           <elementDefinition Id="1fd5ff0b-72e6-4e0f-b66b-248632f07281" />

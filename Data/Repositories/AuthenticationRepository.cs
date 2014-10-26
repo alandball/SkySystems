@@ -27,13 +27,13 @@ namespace Data.Repositories
             }
         }
 
-        public Authentication Get(string username, string password)
+        public Authentication GetByUsername(string username)
         {
             using (var db = new DataContext())
             {
                 return db.Authentications
                     .Include("User")
-                    .Single(x => x.UserName == username && x.Password == password);
+                    .SingleOrDefault(x => x.UserName == username && x.IsDeleted == false);
             }
         }
     }
