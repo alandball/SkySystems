@@ -10,8 +10,6 @@ using WebMatrix.WebData;
 
 namespace UI.Controllers
 {
-    [Authorize]
-    [InitializeSimpleMembership]
     public class AuthenticationController : Controller
     {
         private readonly IAuthenticationService _authenticationService;

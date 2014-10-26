@@ -6,7 +6,7 @@ namespace UI
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new AuthorizeAttribute()); //globally require authorization
+            //filters.Add(new AuthorizeAttribute()); //globally require authorization
         }
     }
 }

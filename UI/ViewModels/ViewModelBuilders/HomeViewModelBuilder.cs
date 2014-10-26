@@ -8,9 +8,9 @@ namespace UI.ViewModels.ViewModelBuilders
         private readonly IAuthenticationService _authenticationService;
         private readonly IUserService _userService;
 
-        public HomeViewModelBuilder(IAuthenticationService authenticationService, IUserService userService)
+        public HomeViewModelBuilder( IUserService userService)
         {
-            _authenticationService = authenticationService;
+
             _userService = userService;
         }
 

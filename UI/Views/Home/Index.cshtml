@@ -2,11 +2,15 @@
     ViewBag.Title = "Home Page";
 }
 
-<h1>In development</h1>
+<div class="container">
+    <div class="jumbotron velvet-red">
+        <h1>In development</h1>
 
-<p>This website is for demo purposes. Management system for a sawdust distribution company</p>
+        <p>This website is for demo purposes. Management system for a sawdust distribution company</p>
 
-<p>By Thabani Hadebe, Michael Esteves, Henry Le Roux, and Alan Ball</p>
+        <p>By Thabani Hadebe, Michael Esteves, Henry Le Roux, and Alan Ball</p>
 
-<p><a class="btn btn-primary btn-lg" role="button">Button that does nothing &raquo;</a></p>
-@Html.ActionLink("Create user", "Create", "Authentication", new { userId = 2 }, null)
+        <p><a class="btn btn-primary btn-lg" role="button">Button that does nothing &raquo;</a></p>
+        @Html.ActionLink("Create user", "Create", "Authentication", new { userId = 2 }, null)
+    </div>
+</div>

@@ -899,6 +899,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
+  background-color: #fff;
 }
 input,
 button,
@@ -2809,25 +2810,18 @@ fieldset[disabled] .btn-default.active {
   background-color: #333;
 }
 .btn-primary {
-    color: rgba(56, 48, 48, 1);
-    /*border-color: rgba(210, 210, 210, 1);*/
-    background: rgb(206,219,233); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(65,154,214,1) 53%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,219,233,1)), color-stop(17%,rgba(170,197,222,1)), color-stop(53%,rgba(65,154,214,1)), color-stop(84%,rgba(58,139,194,1)), color-stop(100%,rgba(38,85,139,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(65,154,214,1) 53%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(65,154,214,1) 53%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(65,154,214,1) 53%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(65,154,214,1) 53%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: black;
+  color: #fff;
   background-color: #3071a9;
-  border-color: black;
+  border-color: #285e8e;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -4450,7 +4444,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #black;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;

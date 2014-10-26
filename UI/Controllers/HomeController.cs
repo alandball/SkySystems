@@ -7,15 +7,15 @@ namespace UI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IAuthenticationService _authenticationService;
+
         private readonly IUserService _userService;
         private readonly HomeViewModelBuilder _viewModelBuilder;
 
-        public HomeController(IAuthenticationService authenticationService, IUserService userService)
+        public HomeController(IUserService userService)
         {
-            _authenticationService = authenticationService;
+
             _userService = userService;
-            _viewModelBuilder = new HomeViewModelBuilder(_authenticationService, _userService);
+            _viewModelBuilder = new HomeViewModelBuilder( _userService);
         }
 
         [AllowAnonymous]
