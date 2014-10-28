@@ -1,0 +1,59 @@
+﻿@model UI.ViewModels.ClientIndexViewModel
+
+<div id="clients-container">
+    
+    <div class="text-right">    
+        @Ajax.ActionLink("Add a client", "Create", "Client", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateGetComplete" }, new { @class = "btn btn-primary" })
+    </div>
+    
+    <br />
+
+    @if (Model.Clients.Any())
+    {
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Contact Number
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+            @foreach (var client in Model.Clients)
+            {
+                <tr>
+                    <td>
+                        @client.CompanyName
+                    </td>
+                    <td>
+                        @client.Email
+                    </td>
+                    <td>
+                        @client.Tel1
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxRequiredUserDocumentCreateUpdateGetComplete" }, new { @class = "" })
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Delete", "Delete", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            No clients yet
+        </div>
+    }
+
+</div>

@@ -73,6 +73,14 @@
     <Compile Include="Migrations\201410251404191_UserIsDeletedNotNullable.Designer.cs">
       <DependentUpon>201410251404191_UserIsDeletedNotNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410272258240_AlterClientTypeFieldNameToString.cs" />
+    <Compile Include="Migrations\201410272258240_AlterClientTypeFieldNameToString.Designer.cs">
+      <DependentUpon>201410272258240_AlterClientTypeFieldNameToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410281205543_FixUpRelationshipsStockStockLogs.cs" />
+    <Compile Include="Migrations\201410281205543_FixUpRelationshipsStockStockLogs.Designer.cs">
+      <DependentUpon>201410281205543_FixUpRelationshipsStockStockLogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AddressRepository.cs" />
@@ -80,6 +88,7 @@
     <Compile Include="Repositories\AuthenticationRepository.cs" />
     <Compile Include="Repositories\ClientRepository.cs" />
     <Compile Include="Repositories\ClientTypeRepository.cs" />
+    <Compile Include="Repositories\StockLogRepository.cs" />
     <Compile Include="Repositories\OrderRepository.cs" />
     <Compile Include="Repositories\StockRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
@@ -112,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201410251404191_UserIsDeletedNotNullable.resx">
       <DependentUpon>201410251404191_UserIsDeletedNotNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410272258240_AlterClientTypeFieldNameToString.resx">
+      <DependentUpon>201410272258240_AlterClientTypeFieldNameToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410281205543_FixUpRelationshipsStockStockLogs.resx">
+      <DependentUpon>201410281205543_FixUpRelationshipsStockStockLogs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

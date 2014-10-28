@@ -15,11 +15,10 @@ namespace Data
         public DbSet<ClientType> ClientTypes { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Stock> Stock { get; set; }
+        public DbSet<StockLog> StockLog { get; set; }
 
         public DbSet<Address> Addresses { get; set; }
         public DbSet<AddressType> AddressTypes { get; set; }
-
-        
 
         public DataContext()
             : base("DefaultConnection")

@@ -7,6 +7,7 @@ namespace Common.Models
         public int Id { get; set; }
 		public int ClientId { get; set; }
 		public int AddressId { get; set; }
+        public int BranchId { get; set; }
 
         public string GoogleMapLink { get; set; }
 		
@@ -26,5 +27,6 @@ namespace Common.Models
 
         public virtual Client Client { get; set; }
 		public virtual Address Address { get; set; }
+        public virtual Branch Branch { get; set; }
     }
 }

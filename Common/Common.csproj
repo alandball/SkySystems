@@ -99,6 +99,9 @@
     <Compile Include="ClientTypes\ClientTypeService.cs" />
     <Compile Include="ClientTypes\IClientTypeRepository.cs" />
     <Compile Include="ClientTypes\IClientTypeService.cs" />
+    <Compile Include="StockLogs\IStockLogRepository.cs" />
+    <Compile Include="StockLogs\IStockLogService.cs" />
+    <Compile Include="StockLogs\StockLogService.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\AddressType.cs" />
     <Compile Include="Models\Authentication.cs" />
@@ -106,8 +109,8 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\ClientType.cs" />
     <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\StockLog.cs" />
+    <Compile Include="Models\Stock.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
     <Compile Include="Orders\IOrderRepository.cs" />
