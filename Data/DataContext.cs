@@ -14,7 +14,6 @@ namespace Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<ClientType> ClientTypes { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<StockLogOrder> StockLogOrder { get; set; }
         public DbSet<StockLog> StockLog { get; set; }
 
         public DbSet<Address> Addresses { get; set; }

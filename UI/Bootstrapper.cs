@@ -5,7 +5,6 @@ using Common.Authentications;
 using Common.Clients;
 using Common.ClientTypes;
 using Common.Orders;
-using Common.StockLogOrders;
 using Common.StockLogs;
 using Common.Users;
 using Data.Repositories;
@@ -40,7 +39,6 @@ namespace UI
             container.RegisterType<IClientService, ClientService>();
             container.RegisterType<IClientTypeService, ClientTypeService>();
             container.RegisterType<IOrderService, OrderService>();
-            container.RegisterType<IStockLogOrderService, StockLogOrderService>();
             container.RegisterType<IStockLogService, StockLogService>();
 
             //Repos
@@ -51,7 +49,6 @@ namespace UI
             container.RegisterType<IClientRepository, ClientRepository>();
             container.RegisterType<IClientTypeRepository, ClientTypeRepository>();
             container.RegisterType<IOrderRepository, OrderRepository>();
-            container.RegisterType<IStockLogOrderRepository, StockLogOrderRepository>();
             container.RegisterType<IStockLogRepository, StockLogRepository>();
 
             return container;

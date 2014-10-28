@@ -5870,6 +5870,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="13189d2e-c469-418c-b0f6-12e1bf86a361"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="StockLog"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="65e129d1-2248-4bde-bfc4-e34144e69dc2"
+              LastKnownName="StockLog"
+              LastKnownLocation="LifeCycle.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64325bf8-e925-4705-832b-135e26220cd4"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f54fd858-a0a9-4c35-96b9-577bc13ba94b"
+                  name="StockLog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -5952,6 +5991,17 @@
           <property
             Id="b58af2f3-fa03-4787-945a-2430212bb935"
             name="BranchId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a0804185-ced2-435c-9fe9-5da7c2891be6"
+            name="StockLogId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -6449,17 +6499,6 @@
           <property
             Id="7e298c51-cad9-4a57-ac49-afcab9f2bda6"
             name="Id"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="d7dda7a6-1268-4d80-8dc0-a45afd82677f"
-            name="Quantity"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

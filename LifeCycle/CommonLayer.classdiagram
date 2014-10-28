@@ -273,10 +273,6 @@
             <classMoniker Id="a488c47c-86d0-497d-96a7-c9c065af60f2" LastKnownName="Client" />
             <elementDefinition Id="d8f32e3a-6b96-4ea8-957b-36ed2438d69c" />
           </dependency>
-          <dependency Id="56b89e85-13d5-411e-83dd-47d0725b8aa1">
-            <classMoniker Id="42299030-c369-49b9-9191-4289276122a8" LastKnownName="StockLogOrder" />
-            <elementDefinition Id="d248f36b-f66b-49e8-8019-223ace131532" />
-          </dependency>
         </suppliersInternal>
         <targetEnds>
           <association Id="141d91d8-feca-4180-b167-bc497cdb4da6" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="Branch" isLeaf="false" isAbstract="false">
@@ -294,6 +290,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="08e23905-4b2c-4ea2-ba40-4fa2fccc3864" />
+          </association>
+          <association Id="c5c40500-d7b5-4686-847c-cc5e3ef339f7" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="StockLog" isLeaf="false" isAbstract="false">
+            <classMoniker Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" LastKnownName="StockLog" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7afd023-a3ec-4239-8526-ee292c49387e" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64325bf8-e925-4705-832b-135e26220cd4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1dfb7bfb-9cfb-4ef5-8751-b49fb3001594" name="StockLog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f54fd858-a0a9-4c35-96b9-577bc13ba94b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="13189d2e-c469-418c-b0f6-12e1bf86a361" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -321,55 +333,8 @@
           <property Id="1fe0182d-7d76-4dd0-87e1-cf0360da3a2b" name="BranchId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b58af2f3-fa03-4787-945a-2430212bb935" />
           </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="42299030-c369-49b9-9191-4289276122a8" name="StockLogOrder" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="3c13f2bb-0899-475b-ba4e-452b5a78683b" />
-        <targetEnds>
-          <association Id="9eea5101-adb9-4c59-8c7d-5c63d1e40f14" isDerived="false" sourceEndRoleName="Stock" targetEndRoleName="Orders" isLeaf="false" isAbstract="false">
-            <classMoniker Id="0dc46ad4-7c1c-4e9f-8c81-83a55a51a413" LastKnownName="Order" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e22e7483-5b5c-453f-8b5a-1f074cfb6f4b" name="Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="86154463-4d60-4c69-8c7f-55436c4e87e2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="0c93ffa3-c9de-48fc-b4ac-47b9641decd9" name="Orders" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="115d2d4e-adca-4407-a299-575259386d98" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5db7e8e4-841d-4752-a1d7-717351d30d1c" />
-          </association>
-          <association Id="a927e968-1b41-4af5-87b2-b879f0640d20" isDerived="false" sourceEndRoleName="Stock" targetEndRoleName="StockLog" isLeaf="false" isAbstract="false">
-            <classMoniker Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" LastKnownName="StockLog" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b5fe1797-41cd-4927-8ce2-778f1dc17fef" name="Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="75e13e53-a401-4ea8-8f14-3f02ab2ff2a8" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="492af08a-7c00-437a-b5c7-b77eeeeb1787" name="StockLog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="809117cb-ef36-49d2-8808-531a72c09208" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="855b3735-cc14-4d8b-9e20-d1d1d7d15523" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="61fbf0ea-ee1a-4818-9784-b6476f4a4abc" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8ca823b8-01c1-4c64-a65b-da150f15d1ea" />
-          </property>
-          <property Id="8bc6bdeb-8809-45a0-83ce-ddb5275bd4f0" name="OrderId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e08fb9da-00c8-4bd3-98d3-eee5995a1cba" />
-          </property>
-          <property Id="9e519e87-0873-4566-990b-dcb7e61271d6" name="StockId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="620b700f-9804-4875-b9d2-df1d413c6653" />
+          <property Id="a1fa888e-ddc2-41ff-b1fe-3fea0c19cff5" name="StockLogId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0804185-ced2-435c-9fe9-5da7c2891be6" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -517,9 +482,6 @@
         <ownedAttributesInternal>
           <property Id="8b883c80-cd26-4ff7-be18-72d5154cce38" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7e298c51-cad9-4a57-ac49-afcab9f2bda6" />
-          </property>
-          <property Id="c5af5064-0f43-4d3a-9404-0a071b1d226d" name="Quantity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d7dda7a6-1268-4d80-8dc0-a45afd82677f" />
           </property>
           <property Id="409becae-f044-4e1c-bd3c-f25b5bd592b6" name="InOut" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a1b172b2-a90d-4de9-bb91-5c394941cad8" />

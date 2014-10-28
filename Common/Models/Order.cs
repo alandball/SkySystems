@@ -8,13 +8,12 @@ namespace Common.Models
 		public int ClientId { get; set; }
 		public int AddressId { get; set; }
         public int BranchId { get; set; }
+        public int StockLogId { get; set; }
 
         public string GoogleMapLink { get; set; }
 		
 		public DateTime? DeliveryDate { get; set; }
-		public DateTime? OrderDate { get; set; }
 		
-		public int Quantity { get; set; }
 		public bool Status { get; set; }		    
 	 
         public DateTime DateCreated { get; set; }
@@ -28,5 +27,6 @@ namespace Common.Models
         public virtual Client Client { get; set; }
 		public virtual Address Address { get; set; }
         public virtual Branch Branch { get; set; }
+        public virtual StockLog StockLog { get; set; }
     }
 }

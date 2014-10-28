@@ -7,7 +7,6 @@ namespace Common.Models
         public int Id { get; set; }
         public int BranchId { get; set; }
 
-        public double Quantity { get; set; }
         public double InOut { get; set; }
 
         public DateTime DateCreated { get; set; }
