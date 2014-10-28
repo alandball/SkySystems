@@ -20,6 +20,5 @@ namespace UI.ViewModels.ViewModelBuilders
 
             return model;
         }
-    
     }
 }

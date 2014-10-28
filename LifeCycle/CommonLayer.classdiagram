@@ -274,7 +274,7 @@
             <elementDefinition Id="d8f32e3a-6b96-4ea8-957b-36ed2438d69c" />
           </dependency>
           <dependency Id="56b89e85-13d5-411e-83dd-47d0725b8aa1">
-            <classMoniker Id="42299030-c369-49b9-9191-4289276122a8" LastKnownName="StockLog" />
+            <classMoniker Id="42299030-c369-49b9-9191-4289276122a8" LastKnownName="StockLogOrder" />
             <elementDefinition Id="d248f36b-f66b-49e8-8019-223ace131532" />
           </dependency>
         </suppliersInternal>
@@ -325,7 +325,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="42299030-c369-49b9-9191-4289276122a8" name="StockLog" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="42299030-c369-49b9-9191-4289276122a8" name="StockLogOrder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3c13f2bb-0899-475b-ba4e-452b5a78683b" />
         <targetEnds>
           <association Id="9eea5101-adb9-4c59-8c7d-5c63d1e40f14" isDerived="false" sourceEndRoleName="Stock" targetEndRoleName="Orders" isLeaf="false" isAbstract="false">
@@ -345,7 +345,7 @@
             <elementDefinition Id="5db7e8e4-841d-4752-a1d7-717351d30d1c" />
           </association>
           <association Id="a927e968-1b41-4af5-87b2-b879f0640d20" isDerived="false" sourceEndRoleName="Stock" targetEndRoleName="StockLog" isLeaf="false" isAbstract="false">
-            <classMoniker Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" LastKnownName="Stock" />
+            <classMoniker Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" LastKnownName="StockLog" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b5fe1797-41cd-4927-8ce2-778f1dc17fef" name="Stock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -494,7 +494,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" name="Stock" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="27a1419e-5e4a-4cce-84eb-25a5505e82f6" name="StockLog" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="65e129d1-2248-4bde-bfc4-e34144e69dc2" />
         <targetEnds>
           <association Id="f54e43ff-a152-42f1-909d-38fbf416ec7e" isDerived="false" sourceEndRoleName="Stock" targetEndRoleName="Branch" isLeaf="false" isAbstract="false">

@@ -239,10 +239,12 @@
     <Compile Include="ViewModels\ClientIndexViewModel.cs" />
     <Compile Include="ViewModels\HomeIndexViewModel.cs" />
     <Compile Include="ViewModels\OrderIndexViewModel.cs" />
+    <Compile Include="ViewModels\StockLogIndexViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\AuthenticationViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\ClientViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\HomeViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\OrderViewModelBuilder.cs" />
+    <Compile Include="ViewModels\ViewModelBuilders\StockLogViewModelBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -328,13 +330,13 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App.config" />
-    <Content Include="Views\Stock\Index.cshtml" />
     <Content Include="Views\Authentication\Index.cshtml" />
     <Content Include="Views\Authentication\CreateUpdate.cshtml" />
     <Content Include="_AppStart.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Client\IndexPartial.cshtml" />
     <Content Include="Views\Order\IndexPartial.cshtml" />
+    <Content Include="Views\Stock\IndexPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5826,7 +5826,7 @@
             Id="d248f36b-f66b-49e8-8019-223ace131532">
             <classMoniker
               Id="3c13f2bb-0899-475b-ba4e-452b5a78683b"
-              LastKnownName="StockLog"
+              LastKnownName="StockLogOrder"
               LastKnownLocation="LifeCycle.uml" />
           </dependency>
         </suppliersInternal>
@@ -5966,7 +5966,7 @@
     <packageHasNamedElement>
       <class
         Id="3c13f2bb-0899-475b-ba4e-452b5a78683b"
-        name="StockLog"
+        name="StockLogOrder"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -6019,7 +6019,7 @@
             isAbstract="false">
             <classMoniker
               Id="65e129d1-2248-4bde-bfc4-e34144e69dc2"
-              LastKnownName="Stock"
+              LastKnownName="StockLog"
               LastKnownLocation="LifeCycle.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -6400,7 +6400,7 @@
     <packageHasNamedElement>
       <class
         Id="65e129d1-2248-4bde-bfc4-e34144e69dc2"
-        name="Stock"
+        name="StockLog"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
