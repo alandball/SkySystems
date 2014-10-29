@@ -4,9 +4,80 @@
     
     <h1 class="page-header" style="margin-top: 0 !important;">Clients</h1>
 
-    <div class="text-right">    
-        @Ajax.ActionLink("Add a client", "Create", "Client", new { userId = 2 }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "btn btn-default" })
+    <div class="text-right">
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#createClient">Add Client</button>
     </div>
+
+        @using (Html.BeginForm("CreateUpdate", "Client"))
+        {
+            <div class="modal fade" id="createClient" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h3>
+                                @Html.Raw(Model.Id > 0 ? "Edit Client" : "Add Client")
+                            </h3>
+                        </div>
+    
+                        <div class="modal-body">
+        
+                            @Html.HiddenFor(m => m.Id)
+                            @Html.HiddenFor(m => m.UserId)
+        
+                            <div class="control-group">
+                                @Html.LabelFor(m => m.CompanyName, new {@class = "control-label"})
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.CompanyName)
+                                </div>
+                            </div>
+        
+                            <div class="control-group">
+                                @Html.LabelFor(m => m.Email, new {@class = "control-label"})
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Email)
+                                </div>
+                            </div>
+        
+                            <div class="control-group">
+                                @Html.LabelFor(m => m.Tel1, new {@class = "control-label"})
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Tel1)
+                                </div>
+                            </div>
+        
+                            <div class="control-group">
+                                @Html.LabelFor(m => m.Tel2, new {@class = "control-label"})
+                                <div class="controls">
+                                    @Html.TextBoxFor(m => m.Tel2)
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                @Html.LabelFor(m => m.ClientTypeId, new {@class = "control-label"})
+                                <div class="controls">
+                                    @Html.DropDownListFor(m => m.ClientTypeId, new SelectList(Model.ClientTypes, "Id", "Name"), new {})
+                                </div>
+                            </div>
+        
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                            <input type="submit" value="Add" class="btn btn-primary" />
+                        </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+        }
+
+        @*@Ajax.ActionLink("Add a client", "Create", "Client", new { userId = 2 }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "btn btn-default" })*@
+    
     
     <br />
 
@@ -42,10 +113,11 @@
                         @client.Tel1
                     </td>
                     <td>
-                        @Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "" })
+                        <button class="btn-link" data-toggle="modal" data-target="#createClient">Edit</button>
+                        @*@Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "" })*@
                     </td>
                     <td>
-                        @Ajax.ActionLink("Delete", "Delete", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
+                        @*@Ajax.ActionLink("Delete", "Delete", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })*@
                     </td>
                 </tr>
             }

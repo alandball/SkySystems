@@ -1,6 +1,9 @@
 ﻿using System.Web.Mvc;
 using Common.Clients;
 using Common.ClientTypes;
+using Common.Models;
+using Omu.ValueInjecter;
+using UI.ViewModels;
 using UI.ViewModels.ViewModelBuilders;
 
 namespace UI.Controllers
@@ -19,9 +22,9 @@ namespace UI.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Index(int? userId)
         {
-            var model = _viewModelBuilder.BuildIndexViewModel();
+            var model = _viewModelBuilder.BuildIndexViewModel( userId);
             return PartialView("IndexPartial", model);
         }
 
@@ -45,9 +48,14 @@ namespace UI.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateUpdate()
+        public ActionResult CreateUpdate(ClientIndexViewModel model)
         {
-            throw new System.NotImplementedException();
+            var client = new Client();
+            client.InjectFrom(model);
+
+            _clientService.CreateUpdate(client);
+
+            return RedirectToAction("Index", "Dashboard");
         }
     }
 }

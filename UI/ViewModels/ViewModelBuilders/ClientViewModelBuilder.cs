@@ -14,12 +14,20 @@ namespace UI.ViewModels.ViewModelBuilders
             _clientTypeService = clientTypeService;
         }
 
-        public ClientIndexViewModel BuildIndexViewModel()
+        public ClientIndexViewModel BuildIndexViewModel(int? userId)
         {
+            var clientTypes = _clientTypeService.GetAll();
+
             var model = new ClientIndexViewModel
             {
-                Clients = _clientService.GetAll()
+                Clients = _clientService.GetAll(),
+                ClientTypes = clientTypes
             };
+
+            if (userId.HasValue)
+            {
+                model.UserId = userId.Value;
+            }
 
             return model;
         }

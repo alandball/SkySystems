@@ -6,5 +6,6 @@ namespace Common.Clients
     public interface IClientService
     {
         List<Client> GetAll();
+        int CreateUpdate(Client client);
     }
 }
