@@ -227,7 +227,7 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
-    <Compile Include="Controllers\StockController.cs" />
+    <Compile Include="Controllers\StockLogController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -337,7 +337,7 @@
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Client\IndexPartial.cshtml" />
     <Content Include="Views\Order\IndexPartial.cshtml" />
-    <Content Include="Views\Stock\IndexPartial.cshtml" />
+    <Content Include="Views\StockLog\IndexPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

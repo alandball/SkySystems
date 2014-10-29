@@ -1,3 +1,71 @@
 ﻿@model UI.ViewModels.OrderIndexViewModel
 
+<div id="orders-container">
+    
+    <div class="text-right">    
+        @Ajax.ActionLink("Create a new order", "Create", "Order", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateGetComplete" }, new { @class = "btn btn-default" })
+    </div>
+    
+    <br />
 
+    @if (Model.Orders.Any())
+    {
+        <table class="table table-responsive table-bordered table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Client Name
+                    </th>
+                    <th>
+                        Client Contact
+                    </th>
+                    <th>
+                        Delivery Address
+                    </th>
+                    <th>
+                        Date Due
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>
+                        @order.Client.CompanyName
+                    </td>
+                    <td>
+                        @order.Client.Tel1
+                    </td>
+                    <td>
+                        @order.Address.AddressLine1 @order.Address.AddressLine2 @order.Address.AddressLine3
+                    </td>
+                    <td>
+                        @order.DateToBeDelivered
+                    </td>
+                    <td>
+                        @order.Status
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Edit", "Update", "Order", new { id = order.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxOrderCreateUpdateGetComplete" }, new { @class = "" })
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Delete", "Delete", "Order", new { id = order.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            No orders yet
+        </div>
+    }
+
+</div>

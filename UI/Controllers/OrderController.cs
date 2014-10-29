@@ -21,5 +21,23 @@ namespace UI.Controllers
             var model = _viewModelBuilder.BuildIndexViewModel();
             return PartialView("IndexPartial", model);
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        [HttpGet]
+        public ActionResult Update(object id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        [HttpGet]
+        public ActionResult Delete(object id)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

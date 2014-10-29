@@ -11,8 +11,9 @@ namespace Common.Models
         public int StockLogId { get; set; }
 
         public string GoogleMapLink { get; set; }
-		
-		public DateTime? DeliveryDate { get; set; }
+
+        public DateTime DateToBeDelivered { get; set; }
+		public DateTime? DateDelivered { get; set; }
 		
 		public bool Status { get; set; }		    
 	 

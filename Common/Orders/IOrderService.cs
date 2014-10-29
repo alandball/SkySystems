@@ -5,6 +5,6 @@ namespace Common.Orders
 {
     public interface IOrderService
     {
-        List<Order> GetAll();
+        List<Order> GetByBranch();
     }
 }

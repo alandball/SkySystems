@@ -1,0 +1,53 @@
+﻿@model UI.ViewModels.StockLogIndexViewModel
+
+<div id="stock-logs-container">
+    
+    <div class="text-right">    
+        @Ajax.ActionLink("Add stock", "Create", "StockLog", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxStockLogCreateGetComplete" }, new { @class = "btn btn-default" })
+    </div>
+    
+    <br />
+
+    @if (Model.StockLogs.Any())
+    {
+        <table class="table table-responsive table-bordered table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Quantity
+                    </th>
+                    <th>
+                        Date Added
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            
+            @foreach (var stockLog in Model.StockLogs)
+            {
+                <tr>
+                    <td>
+                        @stockLog.InOut
+                    </td>
+                    <td>
+                        @stockLog.DateCreated
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Edit", "Update", "StockLog", new { id = stockLog.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxStockCreateGetComplete" }, new { @class = "" })
+                    </td>
+                    <td>
+                        @Ajax.ActionLink("Delete", "Delete", "StockLog", new { id = stockLog.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            No Stock records yet
+        </div>
+    }
+
+</div>

@@ -15,7 +15,7 @@ namespace UI.ViewModels.ViewModelBuilders
         {
             var model = new OrderIndexViewModel
             {
-                Orders = _orderService.GetAll()
+                Orders = _orderService.GetByBranch()
             };
 
             return model;

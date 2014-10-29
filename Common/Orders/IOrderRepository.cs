@@ -5,6 +5,6 @@ namespace Common.Orders
 {
     public interface IOrderRepository
     {
-        List<Order> GetAll(int branchId);
+        List<Order> GetByBranch(int branchId);
     }
 }

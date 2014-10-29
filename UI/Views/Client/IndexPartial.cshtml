@@ -40,7 +40,7 @@
                         @client.Tel1
                     </td>
                     <td>
-                        @Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxRequiredUserDocumentCreateUpdateGetComplete" }, new { @class = "" })
+                        @Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "" })
                     </td>
                     <td>
                         @Ajax.ActionLink("Delete", "Delete", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })

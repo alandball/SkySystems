@@ -13,9 +13,9 @@ namespace Common.Orders
 
         }
 
-        public List<Order> GetAll()
+        public List<Order> GetByBranch()
         {
-            return _orderRepository.GetAll(1);
+            return _orderRepository.GetByBranch(1);
         }
     }
 }

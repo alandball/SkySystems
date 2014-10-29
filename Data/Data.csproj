@@ -105,6 +105,10 @@
     <Compile Include="Migrations\201410282222039_MoreTweaksToStockAndOrder.Designer.cs">
       <DependentUpon>201410282222039_MoreTweaksToStockAndOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410291258036_OrderTableDateDeliveredAndDateToBeDelivered.cs" />
+    <Compile Include="Migrations\201410291258036_OrderTableDateDeliveredAndDateToBeDelivered.Designer.cs">
+      <DependentUpon>201410291258036_OrderTableDateDeliveredAndDateToBeDelivered.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AddressRepository.cs" />
@@ -168,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201410282222039_MoreTweaksToStockAndOrder.resx">
       <DependentUpon>201410282222039_MoreTweaksToStockAndOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410291258036_OrderTableDateDeliveredAndDateToBeDelivered.resx">
+      <DependentUpon>201410291258036_OrderTableDateDeliveredAndDateToBeDelivered.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

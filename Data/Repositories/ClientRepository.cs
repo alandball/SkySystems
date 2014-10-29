@@ -11,7 +11,9 @@ namespace Data.Repositories
         {
             using (var db = new DataContext())
             {
-                return db.Clients.Where(x => x.IsDeleted == false).ToList();
+                return db.Clients
+                    .Include("ClientType")
+                    .Where(x => x.IsDeleted == false).OrderBy(x => x.CompanyName).ToList();
             }
         }
     }
