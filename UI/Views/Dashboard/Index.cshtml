@@ -18,7 +18,7 @@
     <div id="sidebar-wrapper">
         <ul class="nav nav-sidebar sidebar-nav">
             <li class="sidebar-brand"><a href="#">Dashboard</a></li>
-            <li><a href="#">Overview</a></li>
+            <li>@Ajax.ActionLink("Add a client", "CreateClient", "Dashboard", new { userId = 2 }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "btn btn-default" })</li>
             <li><a href="#clients" data-toggle="tab">Clients</a></li>
             <li><a href="#orders" data-toggle="tab">Orders</a></li>
             <li><a href="#stock" data-toggle="tab">Stock</a></li>

@@ -224,6 +224,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\ClientController.cs" />
+    <Compile Include="Controllers\CreateClientController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -238,11 +239,13 @@
     <Compile Include="ViewModels\AuthenticationCreateUpdateViewModel.cs" />
     <Compile Include="ViewModels\ClientCreateUpdateViewModel.cs" />
     <Compile Include="ViewModels\ClientIndexViewModel.cs" />
+    <Compile Include="ViewModels\DashboardClientCreateUpdateViewModel.cs" />
     <Compile Include="ViewModels\HomeIndexViewModel.cs" />
     <Compile Include="ViewModels\OrderIndexViewModel.cs" />
     <Compile Include="ViewModels\StockLogIndexViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\AuthenticationViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\ClientViewModelBuilder.cs" />
+    <Compile Include="ViewModels\ViewModelBuilders\DashboardViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\HomeViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\OrderViewModelBuilder.cs" />
     <Compile Include="ViewModels\ViewModelBuilders\StockLogViewModelBuilder.cs" />
@@ -344,6 +347,7 @@
     <Content Include="Views\Order\IndexPartial.cshtml" />
     <Content Include="Views\StockLog\IndexPartial.cshtml" />
     <Content Include="Views\Client\CreateUpdatePartial.cshtml" />
+    <Content Include="Views\Dashboard\CreateUpdatePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
