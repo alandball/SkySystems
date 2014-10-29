@@ -35,5 +35,10 @@ namespace UI.Controllers
         {
             return View();
         }
+
+        public ActionResult Test()
+        {
+            return PartialView("Test");
+        }
     }
 }

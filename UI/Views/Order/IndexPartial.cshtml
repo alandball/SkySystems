@@ -2,6 +2,8 @@
 
 <div id="orders-container">
     
+    <h1 class="page-header" style="margin-top: 0 !important;">Orders</h1>
+
     <div class="text-right">    
         @Ajax.ActionLink("Create a new order", "Create", "Order", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateGetComplete" }, new { @class = "btn btn-default" })
     </div>
@@ -46,10 +48,10 @@
                         @order.Address.AddressLine1 @order.Address.AddressLine2 @order.Address.AddressLine3
                     </td>
                     <td>
-                        @order.DateToBeDelivered
+                        @String.Format("{0:dddd dd MMMM yyyy} at {0: HH:MM}",order.DateToBeDelivered)
                     </td>
                     <td>
-                        @order.Status
+                        @Html.Raw(order.Status ? "Completed" : "Not completed")
                     </td>
                     <td>
                         @Ajax.ActionLink("Edit", "Update", "Order", new { id = order.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxOrderCreateUpdateGetComplete" }, new { @class = "" })

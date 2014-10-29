@@ -2,6 +2,8 @@
 
 <div id="stock-logs-container">
     
+    <h1 class="page-header" style="margin-top: 0 !important;">Stock</h1>
+
     <div class="text-right">    
         @Ajax.ActionLink("Add stock", "Create", "StockLog", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxStockLogCreateGetComplete" }, new { @class = "btn btn-default" })
     </div>
@@ -10,6 +12,8 @@
 
     @if (Model.StockLogs.Any())
     {
+        <h4>@Html.Raw(string.Format("Stock on hand: {0} bags", @Model.Quantity))</h4>
+        
         <table class="table table-responsive table-bordered table-condensed table-hover" style="text-align: right">
             <thead>
                 <tr>
@@ -19,8 +23,6 @@
                     <th>
                         Date Added
                     </th>
-                    <th></th>
-                    <th></th>
                 </tr>
             </thead>
             
@@ -32,12 +34,6 @@
                     </td>
                     <td>
                         @String.Format("{0:dddd dd MMMM yyyy}",stockLog.DateCreated)
-                    </td>
-                    <td>
-                        @Ajax.ActionLink("Edit", "Update", "StockLog", new { id = stockLog.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxStockCreateGetComplete" }, new { @class = "" })
-                    </td>
-                    <td>
-                        @Ajax.ActionLink("Delete", "Delete", "StockLog", new { id = stockLog.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
                     </td>
                 </tr>
             }

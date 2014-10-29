@@ -52,25 +52,24 @@
                     <ul class="nav navbar-nav navbar-right">
                         @*@if (User.Identity.IsAuthenticated)//implement if there is time
                         {
-
-                            *@<li>@Html.ActionLink("Dashboard", "Index", "Dashboard")</li>
-                            <li>@Html.ActionLink("Profile", "Index", "User")</li>
-                        @*}*@
-                            
+                        
+                           
+                        }*@
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Dashboard", "Index", "Dashboard")</li>
+                        @*<li>@Html.ActionLink("Profile", "Index", "User")</li>*@
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                     </ul>
                 </div><!--/.navbar-collapse -->
             </div>
         </div>
-        
-
  
         @RenderBody()
 
         @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/jqueryui")
         @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryui")        
         @Scripts.Render("~/bundles/bootstrapjs")
         
         @RenderSection("scripts", required: false)
