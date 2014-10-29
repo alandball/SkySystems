@@ -9,6 +9,7 @@
         @Styles.Render("~/Content/bootstrapcss")
         @Styles.Render("~/Content/gradients.css")
         @Styles.Render("~/Content/skysystems.css")
+        @Styles.Render("~/Content/themes/base/css")
 
         @Scripts.Render("~/bundles/modernizr")
 
@@ -68,6 +69,8 @@
         @RenderBody()
 
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Scripts.Render("~/bundles/jqueryval")
         @Scripts.Render("~/bundles/bootstrapjs")
         
         @RenderSection("scripts", required: false)

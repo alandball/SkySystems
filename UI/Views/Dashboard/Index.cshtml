@@ -83,9 +83,14 @@
     @Scripts.Render("~/Scripts/modal.js")
 
     <script type="text/javascript">
+        
         $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
+
+        function AjaxClientCreateUpdateGetComplete() {
+            $.validator.unobtrusive.parse("#frm-client-create-update");
+        }
     </script>
 }

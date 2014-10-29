@@ -3,7 +3,7 @@
 <div id="clients-container">
     
     <div class="text-right">    
-        @Ajax.ActionLink("Add a client", "Create", "Client", new {}, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateGetComplete" }, new { @class = "btn btn-default" })
+        @Ajax.ActionLink("Add a client", "Create", "Client", new { userId = 2 }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "btn btn-default" })
     </div>
     
     <br />

@@ -10,7 +10,7 @@ namespace Common.Models
         public string CompanyName { get; set; }
 		public string Email { get; set; }
 		public string Tel1 { get; set; }
-		public string Tel2 { get; set; }    
+		public string Tel2 { get; set; }
 	 
         public DateTime DateCreated { get; set; }
         public DateTime? DateLastModified { get; set; }

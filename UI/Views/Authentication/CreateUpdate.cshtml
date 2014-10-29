@@ -1,8 +1,7 @@
 ﻿@model UI.ViewModels.AuthenticationCreateUpdateViewModel
 
-<h2>Create a new user login</h2>
-
 <section id="loginForm">
+        
     @using (Html.BeginForm("Create", "Authentication", null, FormMethod.Post, new { @class = "form-signin", role = "form" }))
     {
         @Html.AntiForgeryToken()
@@ -11,6 +10,8 @@
         <div>
             @Html.HiddenFor(m => m.Id)
             @Html.HiddenFor(m => m.UserId)
+            
+            <h2>Create new Account</h2>
     
             <input id="UserName" name="UserName" type="email" class="form-control" placeholder="Email address" required autofocus>
             <input id="Password" name="Password" type="password" class="form-control" placeholder="Password" required>

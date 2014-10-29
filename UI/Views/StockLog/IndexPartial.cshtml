@@ -10,7 +10,7 @@
 
     @if (Model.StockLogs.Any())
     {
-        <table class="table table-responsive table-bordered table-condensed table-hover">
+        <table class="table table-responsive table-bordered table-condensed table-hover" style="text-align: right">
             <thead>
                 <tr>
                     <th>
@@ -31,7 +31,7 @@
                         @stockLog.InOut
                     </td>
                     <td>
-                        @stockLog.DateCreated
+                        @String.Format("{0:dddd dd MMMM yyyy}",stockLog.DateCreated)
                     </td>
                     <td>
                         @Ajax.ActionLink("Edit", "Update", "StockLog", new { id = stockLog.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxStockCreateGetComplete" }, new { @class = "" })

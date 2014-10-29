@@ -11,6 +11,9 @@ namespace UI
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                "~/Scripts/jquery-ui.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                 "~/Scripts/jquery.unobtrusive*",
                 "~/Scripts/jquery.validate*"));
@@ -32,6 +35,9 @@ namespace UI
 
             bundles.Add(new StyleBundle("~/Content/Site.css").Include(
                 "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+                "~/Content/jquery-ui.css"));
         }
     }
 }

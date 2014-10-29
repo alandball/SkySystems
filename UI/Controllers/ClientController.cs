@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Common.Clients;
+using Common.ClientTypes;
 using UI.ViewModels.ViewModelBuilders;
 
 namespace UI.Controllers
@@ -7,12 +8,14 @@ namespace UI.Controllers
     public class ClientController : Controller
     {
         private readonly IClientService _clientService;
+        private readonly IClientTypeService _clientTypeService;
         private readonly ClientViewModelBuilder _viewModelBuilder;
 
-        public ClientController(IClientService clientService)
+        public ClientController(IClientService clientService, IClientTypeService clientTypeService)
         {
             _clientService = clientService;
-            _viewModelBuilder = new ClientViewModelBuilder(_clientService);
+            _clientTypeService = clientTypeService;
+            _viewModelBuilder = new ClientViewModelBuilder(_clientService, _clientTypeService);
         }
 
         [HttpGet]
@@ -23,9 +26,10 @@ namespace UI.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public ActionResult Create(int userId)
         {
-            throw new System.NotImplementedException();
+            var model = _viewModelBuilder.BuildCreateViewModel(userId);
+            return PartialView("CreateUpdatePartial", model);
         }
 
         [HttpGet]
@@ -36,6 +40,12 @@ namespace UI.Controllers
 
         [HttpGet]
         public ActionResult Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        [HttpPost]
+        public ActionResult CreateUpdate()
         {
             throw new System.NotImplementedException();
         }
