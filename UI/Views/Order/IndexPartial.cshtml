@@ -30,8 +30,7 @@
                     <th>
                         Status
                     </th>
-                    <th></th>
-                    <th></th>
+
                 </tr>
             </thead>
             
@@ -53,12 +52,7 @@
                     <td>
                         @Html.Raw(order.Status ? "Completed" : "Not completed")
                     </td>
-                    <td>
-                        @Ajax.ActionLink("Edit", "Update", "Order", new { id = order.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxOrderCreateUpdateGetComplete" }, new { @class = "" })
-                    </td>
-                    <td>
-                        @Ajax.ActionLink("Delete", "Delete", "Order", new { id = order.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })
-                    </td>
+
                 </tr>
             }
         </table>

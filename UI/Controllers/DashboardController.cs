@@ -22,16 +22,5 @@ namespace UI.Controllers
         {
             return View();
         }
-
-        public ActionResult CreateClient(int userId)
-        {
-            var model = _viewModelBuilder.BuildCreateViewModel(userId);
-            return PartialView("CreateUpdatePartial", model);
-        }
-
-        public ActionResult CreateUpdate()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

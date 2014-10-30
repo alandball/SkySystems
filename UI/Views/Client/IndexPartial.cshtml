@@ -95,8 +95,9 @@
                     <th>
                         Contact Number
                     </th>
-                    <th></th>
-                    <th></th>
+                    <th>
+                        Client Type
+                    </th>
                 </tr>
             </thead>
             
@@ -113,12 +114,9 @@
                         @client.Tel1
                     </td>
                     <td>
-                        <button class="btn-link" data-toggle="modal" data-target="#createClient">Edit</button>
-                        @*@Ajax.ActionLink("Edit", "Update", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal", OnComplete = "AjaxClientCreateUpdateGetComplete" }, new { @class = "" })*@
+                        @client.ClientType.Name
                     </td>
-                    <td>
-                        @*@Ajax.ActionLink("Delete", "Delete", "Client", new { id = client.Id }, new AjaxOptions { UpdateTargetId = "modal", OnBegin = "showModal" }, new { @class = "" })*@
-                    </td>
+
                 </tr>
             }
         </table>

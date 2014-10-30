@@ -14,7 +14,7 @@ namespace UI.ViewModels.ViewModelBuilders
             _clientTypeService = clientTypeService;
         }
 
-        public ClientIndexViewModel BuildIndexViewModel(int? userId)
+        public ClientIndexViewModel BuildIndexViewModel()
         {
             var clientTypes = _clientTypeService.GetAll();
 
@@ -23,11 +23,6 @@ namespace UI.ViewModels.ViewModelBuilders
                 Clients = _clientService.GetAll(),
                 ClientTypes = clientTypes
             };
-
-            if (userId.HasValue)
-            {
-                model.UserId = userId.Value;
-            }
 
             return model;
         }

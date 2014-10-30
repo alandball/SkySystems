@@ -22,9 +22,9 @@ namespace UI.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index(int? userId)
+        public ActionResult Index()
         {
-            var model = _viewModelBuilder.BuildIndexViewModel( userId);
+            var model = _viewModelBuilder.BuildIndexViewModel();
             return PartialView("IndexPartial", model);
         }
 
